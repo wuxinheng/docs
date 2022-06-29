@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>xblogs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://t.xblogs.net:2022/api/app/file/preview?fileName=0b218fc6-38bc-446b-befc-ed31374fe9b8.ico"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      window.$docsify = {
+        loadSidebar: true, // 加载侧边栏
+        subMaxLevel: 3, // MarkDown 加载菜单级别
+        name: "xblogs", // 站点名称
+        repo: "https://github.com/dotnet/core.git", // 左上角gihub地址
+        logo: "http://t.xblogs.net:2022/api/app/file/preview?fileName=2cdf4f36-f430-4c85-bb83-4788514c6a80.png", // logo
+        themeColor: "#000000", // 主题色
+        autoHeader: true, //自动切换PageTitle
+        count: {
+          countable: true,
+          fontsize: "0.9em",
+          color: "rgb(90,90,90)",
+          language: "chinese",
+        }, // 字数统计
+      };
+    </script>
+
+    <!-- Required: docsify + docsify-themeable -->
+    <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify-themeable"></script>
+
+    <!-- 全文搜索 -->
+    <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+    <!-- 代码拷贝 -->
+    <script src="https://unpkg.com/docsify-copy-code"></script>
+    <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 图片放大 -->
+    <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- 外链脚本 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <!-- 分页 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- 代码高亮 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-csharp.min.js"></script>
+    <!-- 评论系统 Gitalk -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    const gitalk = new Gitalk({
+      clientID: 'Github Application Client ID',
+      clientSecret: 'Github Application Client Secret',
+      repo: 'Github repo',
+      owner: 'Github repo owner',
+      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+    </script> -->
+  </body>
+</html>
